@@ -11,14 +11,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TimelineComponent } from './timeline/timeline.component';
 import { CardModule } from 'primeng/card';
 import { TimelineModule } from 'primeng/timeline';
+import { NavbarComponent } from './navbar/navbar.component';
 
-
+import { AvatarModule } from 'primeng/avatar';
+import { ShopComponent } from './shop/shop.component';
+import { TableModule } from 'primeng/table';
+import { TableComponent } from './table/table.component';
+import { AccordionModule } from 'primeng/accordion';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    TimelineComponent
+    TimelineComponent,
+    NavbarComponent,
+    ShopComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +35,7 @@ import { TimelineModule } from 'primeng/timeline';
     ButtonModule,
     SidebarModule,
     CardModule,
-    TimelineModule
+    TimelineModule,AvatarModule,TableModule,AccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
