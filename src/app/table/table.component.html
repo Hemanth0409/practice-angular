@@ -1,0 +1,46 @@
+<div class="container">
+    <h1>Task-3</h1>
+    <hr>
+    <hr>
+    <h5>1. Create an array for employee details and use *ngFor to display all the records in a table.</h5>
+    <table class="table">
+        <thead>
+            <tr>
+
+                <th scope="col">Emp_Id</th>
+                <th scope="col"> Emp_Name</th>
+                <th scope="col">Department</th>
+                <th scope="col">Salary</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let details of Employee">
+            <tr>
+
+                <th scope="row">{{details.id}}</th>
+                <td>{{details.name}}</td>
+                <td>{{details.dept}}</td>
+                <td>{{details.salary}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <hr>
+    <hr>
+
+    <h5>2. Create product details with imageURL and iterate all the details in the form of either Bootstrap/PrimeNG cards.</h5>
+
+    <div class="container  justify-content-center">
+        <div class="d-flex">
+            <div class="card me-3" style="width: 18rem;" *ngFor="let detail of Products">
+
+                <img src="{{detail.img}}" class="card-img-top" width="150px" height="150px" alt="logo">
+                <hr>
+                <div class="card-body">
+                    <h5 class="card-title">ID:{{detail.id}}</h5>
+                    <h5 class="card-title">NAME:{{detail.P_name}}</h5>
+                    <h5 class="card-text">PRICE:{{detail.price|currency}}</h5>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>

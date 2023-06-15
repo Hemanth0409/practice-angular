@@ -1,0 +1,35 @@
+[{
+        "id": 1,
+        "P_name": "JAGUAR",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVF69-ec7euYv1FdP7kohXhw1ijow7fr2TojQPhH7kRQ&usqp=CAU&ec=48600113",
+        "price": 9000
+    },
+    {
+        "id": 2,
+        "P_name": "MAZDA",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfQsC-LLxj_3ez66957oLdPVfFPr2bJp55wQ&usqp=CAU",
+        "price": 7000
+
+    },
+    {
+        "id": 3,
+        "P_name": "AUDI",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNdlau2254SE9znQLqY22QCzEyRr_PFopHcQ&usqp=CAU",
+        "price": 4000
+
+    },
+    {
+        "id": 4,
+        "P_name": "MINI COOPER",
+        "img": "https://cdn.logojoy.com/wp-content/uploads/2018/05/30150404/1513.png",
+        "price": 7000
+
+    },
+    {
+        "id": 5,
+        "P_name": "BENTLEY",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShYOK8eR6sEVofHPf3e1A-KC_tEYEpoow-I7OjdPZRz2W3eShSIABMkF7yaRLoya9JZ84&usqp=CAU",
+        "price": 6000
+
+    }
+]

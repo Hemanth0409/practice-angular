@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,11 +14,13 @@ import { CardModule } from 'primeng/card';
 import { TimelineModule } from 'primeng/timeline';
 import { NavbarComponent } from './navbar/navbar.component';
 
+import { FormsModule } from '@angular/forms';
 import { AvatarModule } from 'primeng/avatar';
 import { ShopComponent } from './shop/shop.component';
 import { TableModule } from 'primeng/table';
 import { TableComponent } from './table/table.component';
 import { AccordionModule } from 'primeng/accordion';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -26,15 +29,16 @@ import { AccordionModule } from 'primeng/accordion';
     TimelineComponent,
     NavbarComponent,
     ShopComponent,
-    TableComponent
+    TableComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ButtonModule,
-    SidebarModule,
-    CardModule,
+    SidebarModule,HttpClientModule,
+    CardModule,FormsModule,
     TimelineModule,AvatarModule,TableModule,AccordionModule
   ],
   providers: [],

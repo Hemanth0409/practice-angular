@@ -1,0 +1,70 @@
+<div class="container mt-5">
+    <h1>Task-2</h1>
+    <h2>Angular Display Browser Name and Version Example</h2>
+
+    <table class="table table-striped mt-5">
+        <thead>
+            <tr>
+                <th>Browser Name</th>
+                <th>Browser Version</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ browserName | titlecase }}</td>
+                <td>{{ browserVersion | titlecase }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<hr>
+<hr>
+<div class="container d-flex">
+    <div class="mt-5">
+        <h1>Employee Details</h1>
+        <label for="emp_name">Emp_Name:</label>
+        <input type="text" name="value" class="ms-2" placeholder="Name" (keyup.enter)="value1=$any($event.target).value" (keyup.escape)="$any($event.target).value=value1=''"><br><br>
+        <label for="dept">Department:</label>
+        <input type="text" name="value" class="ms-1" placeholder="Department" (keyup.enter)="value2=$any($event.target).value" (keyup.escape)="$any($event.target).value=value2=''"><br><br>
+        <label for="salary">Salary:</label>
+        <input type="text" name="value" class="ms-5" placeholder="Salary" (keyup.enter)="value3=$any($event.target).value" (keyup.escape)="$any($event.target).value=value3=''">
+    </div>
+
+    <div class="mt-5 ms-5">
+        <h1>Employee Details:</h1>
+        <p>Employee Name:{{value1}}</p>
+        <p>Employee Department:{{value2}}</p>
+        <p>Employee salary:{{value3}}</p>
+    </div>
+</div>
+<hr>
+<hr>
+<div class="container">
+    <h1>Mouse Events</h1>
+    <div class=" col-3 mt-3">
+        <p (click)="click()"><b>Click</b> here</p>
+        <h1>{{counter}} </h1>
+    </div>
+    <hr>
+    <p (dblclick)="dblclick()"><b>Double click</b> here</p>
+    <h1>{{counter1}} </h1>
+    <hr>
+    <p (drag)="drag()"><b>Select and Drag </b> here</p>
+    <h1>{{counter2}} </h1>
+    <hr>
+    <p (dragover)="dragover()"><b>Drag and Drop </b> here</p>
+    <h1>{{counter3}} </h1>
+    <p (mousedown)="mousedown()"><b>Mousedown </b> here</p>
+    <h1>{{counter4}} </h1>
+    <hr>
+    <p (mouseenter)="mouseenter()"><b>Mouseenter</b> here</p>
+    <h1>{{counter5}} </h1>
+    <p (mouseleave)="mouseleave()"><b>Mouseleave</b> here</p>
+    <h1>{{counter6}} </h1>
+    <hr>
+    <p (mouseover)="mouseover()"><b>Mouseover</b> here</p>
+    <h1>{{counter7}} </h1>
+    <hr>
+    <p (mouseup)="mouseup()"><b>Mouseup</b> here</p>
+    <h1>{{counter8}} </h1>
+</div>
