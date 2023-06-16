@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ShopComponent } from './shop/shop.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-
+import { Task4Component } from './task4/task4.component';
 import { TableComponent } from './table/table.component';
 import { HomeComponent } from './home/home.component';
 const routes: Routes = [
@@ -19,6 +19,9 @@ const routes: Routes = [
     component: TableComponent,
   },
   { path: 'home', component: HomeComponent },
+  {
+    path:"task4",component:Task4Component
+  }
 ];
 
 @NgModule({

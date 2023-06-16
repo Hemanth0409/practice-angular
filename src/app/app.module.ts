@@ -21,6 +21,7 @@ import { TableModule } from 'primeng/table';
 import { TableComponent } from './table/table.component';
 import { AccordionModule } from 'primeng/accordion';
 import { HomeComponent } from './home/home.component';
+import { Task4Component } from './task4/task4.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     ShopComponent,
     TableComponent,
-    HomeComponent
+    HomeComponent,
+    Task4Component
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,54 @@
+<div class="container justify-content-center">
+    <h5>1. Create a JSON with Batch 35 Trainee details kindly include 'gender' property: a. Using ngFor display all the records. b. Using ngSwitch differentiate the male and female records according to the gender.</h5>
+    <div class="d-flex">
+        <div *ngFor="let details of Trainee_details" [ngSwitch]="details.gender">
+            <div *ngSwitchCase="'male'">
+                <div class="card me-3" style="width: 18rem">
+                    <img src="{{ details.img }}" class="card-img-top" width="150px" height="150px" alt="logo" />
+
+                    <div class="card-body text-danger">
+                        <h5 class="card-title">ID:{{ details.id }}</h5>
+                        <h5 class="card-title">NAME:{{ details.name|uppercase }}</h5>
+                        <h6 class="card-text">Gender:{{ details.gender |uppercase }}</h6>
+                        <h6 class="card-text">Position:{{ details.position|uppercase }}</h6>
+                        <h6 class="card-text">Domain:{{ details.domain|uppercase }}</h6>
+                    </div>
+                </div>
+            </div>
+            <div *ngSwitchCase="'female'">
+                <div class="card me-3" style="width: 18rem">
+                    <img src="{{ details.img }}" class="card-img-top" width="150px" height="150px" alt="logo" />
+
+                    <div class="card-body text-info">
+                        <h5 class="card-title">ID:{{ details.id}}</h5>
+                        <h5 class="card-title">NAME:{{ details.name|uppercase}}</h5>
+                        <h6 class="card-text">Gender:{{ details.gender|uppercase}}</h6>
+                        <h6 class="card-text">Position:{{ details.position|uppercase }}</h6>
+                        <h6 class="card-text">Domain:{{ details.domain|uppercase }}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container  justify-content-center">
+        <h5>2. Create user details and show the working of Toggle effect. On clicking on the user image the user information must be displayed and info must be hidden when clicking back on the image</h5>
+        <div class="d-flex">
+            <div *ngFor="let details of Trainee_details">
+                <div class="card me-3" style="width: 18rem">
+                    <img (click)="toggle()" src="{{ details.img }}" class="card-img-top" width="150px" height="150px" alt="logo" />
+
+                    <div class="card-body text-black">
+                        <div [hidden]="show">
+                            <h5 class="card-title">ID:{{ details.id}}</h5>
+                            <h5 class="card-title">NAME:{{ details.name|uppercase}}</h5>
+                            <h6 class="card-text">Gender:{{ details.gender|uppercase}}</h6>
+                            <h6 class="card-text">Position:{{ details.position|uppercase }}</h6>
+                            <h6 class="card-text">Domain:{{ details.domain|uppercase }}</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
