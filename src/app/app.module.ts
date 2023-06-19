@@ -22,6 +22,8 @@ import { TableComponent } from './table/table.component';
 import { AccordionModule } from 'primeng/accordion';
 import { HomeComponent } from './home/home.component';
 import { Task4Component } from './task4/task4.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { Task4Component } from './task4/task4.component';
     ShopComponent,
     TableComponent,
     HomeComponent,
-    Task4Component
+    Task4Component,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
