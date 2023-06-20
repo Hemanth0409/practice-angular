@@ -27,7 +27,7 @@
         <input type="email" name="email" class="form-control" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': details.submitted && email.invalid }" email required>
 
         <div class="invalid-feedback" *ngIf="details.submitted && email.invalid">
-            <p *ngIf="email.errors">Email is required</p>
+            <p *ngIf="email.errors?.['required']">Email is required</p>
         </div>
     </div>
 
@@ -37,7 +37,7 @@
         <input type="password" name="password" class="form-control" [(ngModel)]="model.password" #password="ngModel" [ngClass]="{ 'is-invalid': details.submitted && password.invalid }" required>
 
         <div class="invalid-feedback" *ngIf="details.submitted && password.invalid">
-            <p *ngIf="password.errors">Password is required</p>
+            <p *ngIf="password.errors?.['required']">Password is required</p>
         </div>
     </div>
 
