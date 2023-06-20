@@ -1,1 +1,19 @@
-<p>child works!</p>
+<div class="card">
+    <div class="d-flex">
+        <div class="card me-3" style="width: 25rem">
+            <img src="https://m.media-amazon.com/images/I/41T-JedIWSL._AC._SR180,230.jpg" alt="">
+            <hr>
+            <div class="card-body text-danger" *ngFor="let details of parentProductList">
+                <h4>Item Name:{{details| titlecase}}</h4>
+                <h5>Quantity:<span>
+                    <button (click)="getquantity(value)" >+</button>
+                </span>
+                    <ng-container>
+                        <input type="text" class="ps-2" [value]="value" style="width: 50px;">
+                    </ng-container>
+                    <button (click)="decquantity(value)">-</button></h5>
+                <h6>Price: <input type="text" class="ps-2" [value]="value*2000" style="width: 50px;"></h6>
+            </div>
+        </div>
+    </div>
+</div>

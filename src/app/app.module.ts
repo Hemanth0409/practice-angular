@@ -24,6 +24,8 @@ import { HomeComponent } from './home/home.component';
 import { Task4Component } from './task4/task4.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { FormsComponent } from './forms/forms.component';
+import { FormReactiveComponent } from './form-reactive/form-reactive.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ChildComponent } from './child/child.component';
     HomeComponent,
     Task4Component,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    FormsComponent,
+    FormReactiveComponent
   ],
   imports: [
     BrowserModule,

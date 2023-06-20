@@ -6,6 +6,8 @@ import { Task4Component } from './task4/task4.component';
 import { TableComponent } from './table/table.component';
 import { HomeComponent } from './home/home.component';
 import { ParentComponent } from './parent/parent.component';
+import { FormReactiveComponent } from './form-reactive/form-reactive.component';
+import { FormsComponent } from './forms/forms.component';
 const routes: Routes = [
   {
     path: 'sidebar',
@@ -24,6 +26,12 @@ const routes: Routes = [
     path:"task4",component:Task4Component
   },{
     path:"parent",component:ParentComponent
+  },
+  {
+    path:"forms",component:FormsComponent
+  },
+  {
+    path:"forms-react",component:FormReactiveComponent
   }
 ];
 
