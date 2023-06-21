@@ -26,6 +26,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { FormsComponent } from './forms/forms.component';
 import { FormReactiveComponent } from './form-reactive/form-reactive.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,7 @@ import { FormReactiveComponent } from './form-reactive/form-reactive.component';
     ButtonModule,
     SidebarModule,HttpClientModule,
     CardModule,FormsModule,
-    TimelineModule,AvatarModule,TableModule,AccordionModule
+    TimelineModule,AvatarModule,TableModule,AccordionModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
