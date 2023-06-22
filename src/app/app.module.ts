@@ -27,6 +27,13 @@ import { ChildComponent } from './child/child.component';
 import { FormsComponent } from './forms/forms.component';
 import { FormReactiveComponent } from './form-reactive/form-reactive.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProductComponent } from './product/product.component';
+import { MenComponent } from './product/men/men.component';
+import { WomenComponent } from './product/women/women.component';
+import { KidsComponent } from './product/kids/kids.component';
+import { FootwearComponent } from './product/men/footwear/footwear.component';
+import { ClothingComponent } from './product/men/clothing/clothing.component';
+import { RoutingParamComponent } from './routing-param/routing-param.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +48,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     ParentComponent,
     ChildComponent,
     FormsComponent,
-    FormReactiveComponent
+    FormReactiveComponent,
+    ProductComponent,
+    MenComponent,
+    WomenComponent,
+    KidsComponent,
+    FootwearComponent,
+    ClothingComponent,
+    RoutingParamComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<a routerLink="/product/men"><button>men</button></a>
+<a routerLink="/product/women"><button>women</button></a>
+<a routerLink="/product/kids"><button>kid</button></a>
+<ul>
+    <li>
+        <a [routerLink]="['/routing',1]">Dhoni</a>
+    </li>
+    <li>
+        <a [routerLink]="['/routing',2]">Virat</a>
+    </li>
+    <li>
+        <a [routerLink]="['/routing',3]">Raghul</a>
+    </li>
+</ul>
+<router-outlet>
+</router-outlet>
